@@ -76,15 +76,25 @@ ul li {
 }
 
 .done_list li:nth-child(odd) {
-    background-color: rgba(0, 255, 0, 0.2);
+    background-color: rgba(0, 0, 255, 0.2);
+}
+
+.check {
+    text-align: center;
 }
 
 
+.decor_h::after {
+    content: "\2600";
+    color: yellow;
+    margin-left: 5px;
+}
 
-
-
-
-
+input[type="checkbox"]:checked + span::after {
+    content: "\2600";
+    color: yellow;
+    margin-left: 5px;
+}
 
 
 
